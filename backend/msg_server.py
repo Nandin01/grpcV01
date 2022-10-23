@@ -11,7 +11,7 @@ class MessengerService(msg_pb2_grpc.messengerServicer):
         print("SayHello Request Made:")
         print(request)
         hello_reply = msg_pb2.HelloReply()
-        hello_reply.message = f"{request.greetimg} {request.name}"
+        hello_reply.message = f"{request.greeting} {request.name}"
         
         return hello_reply    #Unary
 
