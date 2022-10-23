@@ -8,6 +8,7 @@ import msg_pb2_grpc
 
 class MessengerService(msg_pb2_grpc.messengerServicer):
     def SayHello(self, request, context):
+        print("Python Server")
         print("SayHello Request Made:")
         print(request)
         hello_reply = msg_pb2.HelloReply()
