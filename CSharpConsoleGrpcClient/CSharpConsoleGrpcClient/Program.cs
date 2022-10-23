@@ -14,7 +14,7 @@ namespace CSharpConsoleGrpcClient
 
             var input = new HelloRequest();
             input.Name = "C# Client";
-            input.Greeting = "This is coming from .NET";
+            input.Greeting = "--- This is coming from .NET ---";
 
             var channelOptions = new GrpcChannelOptions();
             channelOptions.Credentials = ChannelCredentials.Insecure;

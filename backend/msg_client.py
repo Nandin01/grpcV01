@@ -25,7 +25,7 @@ def run():
 
 
         if rpc_call == "1":
-            hello_request = msg_pb2.HelloRequest(greeting = "Hi", name = "Lkhagvaa")
+            hello_request = msg_pb2.HelloRequest(greeting = "--- This is Python Client Unary RPC ---", name = "Python Client")
             hello_reply = stub.SayHello(hello_request)
             print("Say Hello Response Recieved:")
             print(hello_reply)
